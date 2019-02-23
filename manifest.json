@@ -1,0 +1,28 @@
+{
+    "name": "Scratch Tutorials",
+    "version": "1.0",
+    "description": "Learn science concepts while coding Scratch with these tutorials by Holyoke Codes",
+    "permissions": ["declarativeContent", "activeTab"],
+    "web_accessible_resources": [
+        "tutorial.css",
+        "images/*"
+    ],
+    "content_scripts": [
+        {
+          "matches": ["https://scratch.mit.edu/*"],
+          "all_frames": true,
+          "js": ["node_modules/jquery/dist/jquery.min.js", "jquery-ui.min.js", "contentScript.js" ],
+          "css": ["tutorial.css"]
+        }
+    ],
+    "page_action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "images/get_started16.png",
+        "32": "images/get_started32.png",
+        "48": "images/get_started48.png",
+        "128": "images/get_started128.png"
+    },
+    "manifest_version": 2
+}
