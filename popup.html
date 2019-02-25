@@ -2,23 +2,59 @@
 <html>
   <head>
     <style>
+      body {
+        background-color: rgba(77, 151, 255, 0.25);
+        margin: 0px;
+        max-height: 400px;
+      }
+      h1 {
+
+        padding-left: 10px;
+      }
       .tutorial { 
         width: 360px;
-        background-color: whitesmoke;
+        background-color: white;
+        margin-bottom: 20px;
+        cursor: pointer;
       }
       img { max-width: 100%; }
       .title {
         padding: 0rem 1rem 0.1rem 1rem;
       }
+      .description {
+        padding: 0rem 1rem 1rem 1rem;  
+      }
+      .footer {
+        background-color: whitesmoke;
+        padding: 10px;
+      }
     </style>
   </head>
   <body>
-    <h1>Scratch Tutorials</h1>
+    <h1>Scratch Science</h1>
     <div id="hat-landing" class="tutorial" data-title="Flower Anatomy">
       <img src="/images/flower_anatomy.jpg">
       <div class="title">
         <h2>Flower Anatomy</h2>
       </div>
+      <div class="description">
+        Build your own quiz game to help people learn about the parts of a flower.
+      </div>
+    </div>
+    <div id="hat-landing" class="tutorial" data-title="Flower Anatomy">
+      <img src="/images/flower_anatomy.jpg">
+      <div class="title">
+        <h2>Flower Anatomy</h2>
+      </div>
+      <div class="description">
+        Build your own quiz game to help people learn about the parts of a flower.
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Also access these tutorials and additional curriculum materials at <a href="https://scratchscience.org" target="_blank">scratchscience.org</a>.</p>
+      
+      <p>Thanks to the <a href="http://communityfoundation.org/" target="_blank">Community Foundation of Western Massachusetts</a> for supporting this project. Code is licensed <a href="http://opensource.org/licenses/mit-license.php " target="_blank">MIT</a> open source license. Content is licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY NC SA 4.0.</a></p>
     </div>
     <script src="popup.js"></script>
   </body>
