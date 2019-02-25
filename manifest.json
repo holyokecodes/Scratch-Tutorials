@@ -7,6 +7,10 @@
         "tutorial.css",
         "images/*"
     ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
     "content_scripts": [
         {
           "matches": ["https://scratch.mit.edu/*"],
