@@ -17,7 +17,12 @@
         margin-bottom: 20px;
         cursor: pointer;
       }
-      img { max-width: 100%; }
+      section:last-of-type {
+        margin-bottom: 0;
+      }
+      img { 
+        max-width: 100%; 
+        }
       .title {
         padding: 0rem 1rem 0.1rem 1rem;
       }
@@ -25,14 +30,13 @@
         padding: 0rem 1rem 1rem 1rem;  
       }
       .footer {
-        background-color: whitesmoke;
-        padding: 10px;
+        padding: 1rem;
       }
     </style>
   </head>
   <body>
     <h1>Scratch Science</h1>
-    <div id="hat-landing" class="tutorial" data-title="Flower Anatomy">
+    <section id="hat-landing" class="tutorial" data-title="Flower Anatomy">
       <img src="/images/flower_anatomy.jpg">
       <div class="title">
         <h2>Flower Anatomy</h2>
@@ -40,8 +44,8 @@
       <div class="description">
         Build your own quiz game to help people learn about the parts of a flower.
       </div>
-    </div>
-    <div id="hat-landing" class="tutorial" data-title="Flower Anatomy">
+    </section>
+    <section id="hat-landing" class="tutorial" data-title="Flower Anatomy">
       <img src="/images/flower_anatomy.jpg">
       <div class="title">
         <h2>Flower Anatomy</h2>
@@ -49,9 +53,10 @@
       <div class="description">
         Build your own quiz game to help people learn about the parts of a flower.
       </div>
-    </div>
+    </section>
 
     <div class="footer">
+      <h2>About Scratch Science</h2>
       <p>Also access these tutorials and additional curriculum materials at <a href="https://scratchscience.org" target="_blank">scratchscience.org</a>.</p>
       
       <p>Thanks to the <a href="http://communityfoundation.org/" target="_blank">Community Foundation of Western Massachusetts</a> for supporting this project. Code is licensed <a href="http://opensource.org/licenses/mit-license.php " target="_blank">MIT</a> open source license. Content is licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY NC SA 4.0.</a></p>
