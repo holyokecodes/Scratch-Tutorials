@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <style>
       body {
-        background-color: rgba(77, 151, 255, 0.25);
+        background-color: hsla(215, 100%, 65%, 1);
         margin: 0px;
         max-height: 400px;
+        padding: 10px 0px;
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        background-color: hsla(215, 100%, 65%, 1);
+        padding-left: 10px;
+        padding-bottom: 10px;
       }
       h1 {
-
+        display: inline-block;
+        margin: 0;
         padding-left: 10px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 2rem;
+        color: #ffffff;
+      }
+      .header img {
+        width: 48px;
       }
       .tutorial { 
         width: 360px;
@@ -32,20 +48,22 @@
       .footer {
         padding: 1rem;
       }
+      .footer h2 {
+        font-family: 'Raleway', sans-serif;
+        color: #ffffff;
+      }
+      .footer a {
+        color: #000000;
+      }
     </style>
   </head>
   <body>
-    <h1>Scratch Science</h1>
-    <section id="hat-landing" class="tutorial" data-title="Flower Anatomy">
-      <img src="/images/flower_anatomy.jpg">
-      <div class="title">
-        <h2>Flower Anatomy</h2>
-      </div>
-      <div class="description">
-        Build your own quiz game to help people learn about the parts of a flower.
-      </div>
-    </section>
-    <section id="hat-landing" class="tutorial" data-title="Flower Anatomy">
+    <div class="header">
+        <img src="/images/scratchscience-logo.svg"/>
+        <h1>Scratch Science</h1>
+    </div>
+    
+    <section id="flower-anatomy" class="tutorial" data-title="Flower Anatomy">
       <img src="/images/flower_anatomy.jpg">
       <div class="title">
         <h2>Flower Anatomy</h2>
