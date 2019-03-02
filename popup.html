@@ -4,17 +4,16 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <style>
       body {
-        background-color: hsla(215, 100%, 65%, 1);
+        background-color:hsla(215, 100%, 65%, 0.22);
         margin: 0px;
         max-height: 400px;
-        padding: 10px 0px;
+        padding: 0px;
       }
       .header {
         display: flex;
         align-items: center;
         background-color: hsla(215, 100%, 65%, 1);
-        padding-left: 10px;
-        padding-bottom: 10px;
+        padding: 10px;
       }
       h1 {
         display: inline-block;
@@ -32,13 +31,15 @@
         background-color: white;
         margin-bottom: 20px;
         cursor: pointer;
+        margin: 1rem;
+        border: 1px solid #333333;
+        border-radius: 0.75rem;
+        overflow: hidden;
       }
-      section:last-of-type {
-        margin-bottom: 0;
-      }
-      img { 
+      .tutorial img { 
         max-width: 100%; 
-        }
+        border-bottom: 1px solid #333333;
+      }
       .title {
         padding: 0rem 1rem 0.1rem 1rem;
       }
@@ -46,7 +47,8 @@
         padding: 0rem 1rem 1rem 1rem;  
       }
       .footer {
-        padding: 1rem;
+        padding: 5px 20px;
+        background-color: hsla(215, 100%, 65%, 1);
       }
       .footer h2 {
         font-family: 'Raleway', sans-serif;

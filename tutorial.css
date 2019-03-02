@@ -1,7 +1,8 @@
 .tutorial { 
     position: absolute; 
     top: 260px; 
-    left: 308px; 
+    left: 308px;
+    width: 350px;
     z-index: 999; 
     border: 1px solid hsla(215, 50%, 90%, 1);
     border-radius: 0.75rem;
@@ -31,12 +32,19 @@
     padding-left: 5px;
 }
 .tutorial-content { 
-    width: 420px; 
-    background-color: #ffffff; 
+    background-color: #ffffff;
 }
 .tutorial-content iframe { 
     width: 100%; 
-    height: 315px; 
+    height: 370px; 
     border: 0; 
     display: none;
+}
+.ui-resizable-se {
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+    width: 32px;
+    height: 32px;
+    background: url('chrome-extension://__MSG_@@extension_id__/images/resize.png') center no-repeat;
 }

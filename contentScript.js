@@ -4,6 +4,11 @@ function loadTutorial(id, title) {
 
     document.querySelector(".gui").insertAdjacentHTML("afterbegin", html );
     $(".draggable" ).draggable();
+    $(".draggable").resizable({
+        handles: 'se', 
+        alsoResize: ".tutorial-content iframe",
+        maxWidth: 480
+    });
     $(".tutorial-content iframe").fadeIn(1000)
 
     document.querySelector('.close-tutorial').addEventListener("click", function () {
