@@ -13,7 +13,7 @@
     },
     "content_scripts": [
         {
-          "matches": ["https://scratch.mit.edu/*"],
+          "matches": ["https://scratch.mit.edu/projects/*"],
           "all_frames": true,
           "js": ["node_modules/jquery/dist/jquery.min.js", "jquery-ui.min.js", "contentScript.js" ],
           "css": ["tutorial.css"]
